@@ -5,7 +5,7 @@ pragma abicoder v2;
 import { Test, console2 } from "forge-std/Test.sol";
 import { YoupiSwap } from "../src/YoupiSwap.sol";
 
-contract CounterTest is Test {
+contract YoupiSwapTest is Test {
     YoupiSwap public youpiSwap;
 
     function setUp() public {
