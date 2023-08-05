@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-pragma solidity =0.7.6;
+pragma solidity 0.8.19;
 pragma abicoder v2;
 
 import "v3-periphery/interfaces/ISwapRouter.sol";
@@ -23,7 +23,7 @@ contract YoupiSwap {
     address public constant WETH = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6;
 
     IERC20 public linkToken = IERC20(LINK);
-    // For this example, we will set the pool fee to 0.3%.
+    // We will set the pool fee to 0.3%.
     uint24 public constant poolFee = 3000;
 
     function swapExactInputSingle(
